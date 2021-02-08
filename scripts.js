@@ -23,8 +23,8 @@ btnNow.addEventListener('click', e => {
                 const method = 'new Date().' + element + '()'
                 const line = `<h2> ${method} &#187; <span id="${element}"></span></h2>`
                 list.innerHTML += line
-                const result = document.getElementById(element)
-                result.innerHTML = eval(method)
+                const timeStamp = document.getElementById(element)
+                timeStamp.innerHTML = eval(method)
             }
         }
     }
@@ -41,8 +41,8 @@ btnThisDay.addEventListener('click', e => {
                 const method = 'new Date(' + day.valueAsNumber +').' + element + '()'
                 const line = `<h2> ${method} &#187; <span id="${element}"></span></h2>`
                 list.innerHTML += line
-                const result = document.getElementById(element)
-                result.innerHTML = eval(method)
+                const timeStamp = document.getElementById(element)
+                timeStamp.innerHTML = eval(method)
             }
         }
     }
