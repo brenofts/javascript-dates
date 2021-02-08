@@ -51,12 +51,10 @@ btnThisDay.addEventListener('click', e => {
 mdnLink.addEventListener('click', e => {
     e.preventDefault()
     window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date', '_blank')
-    window.focus()
 })
 
 gitHub.addEventListener('click', e => {
     e.preventDefault()
     window.open('https://github.com/brenofts/javascript-dates.git', '_blank')
-    window.focus()
 })
 
