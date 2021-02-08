@@ -51,7 +51,7 @@ input {
   cursor: pointer;
 }
 
-#menu, #link, #today, #gitHub {
+h1, #menu, #link, #today, #gitHub {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
