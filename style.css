@@ -5,7 +5,10 @@
 }
 
 body {
-  margin: 0px 50px 100px 50px;
+  margin: 0px 20px 100px 40px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 80%;
 }
 
 p {
@@ -15,6 +18,7 @@ p {
 
 h1{
   width: fit-content;
+  font-size: 4vw;
 }
 
 h2 {
@@ -29,7 +33,7 @@ h2 {
   padding: 10px 30px;
   border-radius: 5px;
   border: lightgrey solid 1px;
-  font-size: 26px;
+  font-size: 2vw;
 }
 
 span {
@@ -40,15 +44,18 @@ span {
 button,
 input {
   cursor: pointer;
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 18pt;
+  margin: 15px 15px 0px 15px;
+  font-size: 2vw;
   padding: 10px 35px 10px 35px;
   box-shadow: 8px 8px 2px 1px whitesmoke;
 }
 
 .link {
   cursor: pointer;
+}
+
+#menu {
+  font-size: 2vw;
 }
 
 h1, #menu, #link, #today, #gitHub {

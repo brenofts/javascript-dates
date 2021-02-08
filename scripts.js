@@ -21,7 +21,7 @@ btnNow.addEventListener('click', e => {
         if (!element.includes('set')){
             if (!element.includes('getYear')){
                 const method = 'new Date().' + element + '()'
-                const line = `<h2> ${method} &#187; <span id="${element}"></span></h2>`
+                const line = `<h2> ${method} <br><span id="${element}"></span></h2>`
                 list.innerHTML += line
                 const timeStamp = document.getElementById(element)
                 timeStamp.innerHTML = eval(method)
@@ -39,7 +39,7 @@ btnThisDay.addEventListener('click', e => {
         if (!element.includes('set')){
             if (!element.includes('getYear')){
                 const method = 'new Date(' + day.valueAsNumber +').' + element + '()'
-                const line = `<h2> ${method} &#187; <span id="${element}"></span></h2>`
+                const line = `<h2> ${method} <br> <span id="${element}"></span></h2>`
                 list.innerHTML += line
                 const timeStamp = document.getElementById(element)
                 timeStamp.innerHTML = eval(method)
