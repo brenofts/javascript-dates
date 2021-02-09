@@ -1,14 +1,10 @@
-* {
+body {
+  margin: 0px 20px 100px 10px;
+  display: flex;
+  flex-flow: column wrap;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
-}
-
-body {
-  margin: 0px 20px 100px 40px;
-  display: flex;
-  flex-flow: column wrap;
-  width: 80%;
 }
 
 p {
@@ -18,22 +14,23 @@ p {
 
 h1{
   width: fit-content;
-  font-size: 4vw;
 }
 
 h2 {
-  color: blue;
+  color: rgb(65, 100, 65);
   font-family: consolas;
   background-color: rgb(218, 247, 218);
 }
 
 p,
 h2 {
-  width: fit-content;
-  padding: 10px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100vmin;
+  padding: 10px 10px;
   border-radius: 5px;
   border: lightgrey solid 1px;
-  font-size: 2vw;
+  font-size: 12pt;
 }
 
 span {
@@ -45,17 +42,14 @@ button,
 input {
   cursor: pointer;
   margin: 15px 15px 0px 15px;
-  font-size: 2vw;
-  padding: 10px 35px 10px 35px;
+  font-size: 12pt;
+  padding: 10px 20px 10px 20px;
   box-shadow: 8px 8px 2px 1px whitesmoke;
 }
 
 .link {
   cursor: pointer;
-}
-
-#menu {
-  font-size: 2vw;
+  width: fit-content;
 }
 
 h1, #menu, #link, #today, #gitHub {
@@ -63,4 +57,10 @@ h1, #menu, #link, #today, #gitHub {
   -ms-user-select: none;
   user-select: none;
   
+}
+
+#list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
